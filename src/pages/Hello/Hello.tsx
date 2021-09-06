@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Welcome } from '../../assets/hello.svg';
+import './Hello.scss';
 
 const Hello: FunctionComponent = () => {
   return (
@@ -9,14 +10,14 @@ const Hello: FunctionComponent = () => {
         <Welcome />
       </div>
       <div className="header">
-        <h1>Разнообразь свой рабочий день</h1>
+        <span>Разнообразь свой рабочий день</span>
       </div>
       <div className="description">
-        <h3>Брось вызов соседу и заведи новых друзей</h3>
+        <span>Брось вызов соседу и заведи новых друзей</span>
       </div>
       <div className="footer">
         <Link to="/playzone">
-          <button>Играть</button>
+          <button className="button">Играть</button>
         </Link>
       </div>
     </div>

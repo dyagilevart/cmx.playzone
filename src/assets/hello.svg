@@ -1,6 +1,6 @@
-<svg width="390" height="509" viewBox="0 0 390 509" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<path d="M14.2073 174.202C47.1426 95.5349 185.778 67.3488 236.249 87.063C286.72 106.777 385.607 197.476 389.7 292.488C393.152 372.608 367.19 442.338 292.337 474.14C212.025 508.261 141.878 463.919 80.4286 402.676C14.1668 336.637 -21.7106 259.993 14.2073 174.202Z" fill="#AFAAED" fill-opacity="0.53"/>
-<rect x="14" y="146" width="363" height="363" fill="url(#pattern0)"/>
+<svg width="390" height="428" viewBox="0 0 390 428" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M14.2073 93.202C47.1426 14.5349 185.778 -13.6512 236.249 6.06296C286.72 25.7771 385.607 116.476 389.7 211.488C393.152 291.608 367.19 361.338 292.337 393.14C212.025 427.261 141.878 382.919 80.4286 321.676C14.1668 255.637 -21.7106 178.993 14.2073 93.202Z" fill="#AFAAED" fill-opacity="0.53"/>
+<rect x="14" y="65" width="363" height="363" fill="url(#pattern0)"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0" transform="scale(0.000666667)"/>
