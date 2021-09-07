@@ -1,5 +1,6 @@
-export class GameModel {
-    name: string;
-    icon: string;
-    path: string;
+export interface IGameModel {
+    id: number
+    title: string;
+    description: string;
+    logo: string;
 }

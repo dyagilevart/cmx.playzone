@@ -1,16 +1,18 @@
+import './Game.scss';
+
 export interface IGameProps {
   name: string;
   icon: string;
-  ref: string;
+  link: string;
 }
 
-const Game = ({ name, icon, ref }: IGameProps) => {
+const Game = ({ name, icon, link }: IGameProps) => {
   const open = () => {};
 
   return (
     <div className="game" onClick={open}>
       <div className="logo">
-        <img src={icon} alt={name} />
+        <img src={`data:image/png;base64, ${icon}`} alt={name} />
       </div>
       <div className="name">{name}</div>
     </div>

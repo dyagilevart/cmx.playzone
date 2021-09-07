@@ -8,7 +8,6 @@ const Menu = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    console.log(pathname)
     setState(pathname);
   }, [pathname]);
 
