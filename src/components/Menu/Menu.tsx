@@ -21,7 +21,7 @@ const Menu = () => {
           <BiHomeAlt fill={getFill('/playzone')} size="36px" />
         </div>
       </Link>
-      <Link to="/playzone/award">
+      <Link to="/playzone/awards">
         <div className="menu-item">
           <BiAward fill={getFill('/playzone/award')} size="36px" />
         </div>

@@ -3,6 +3,7 @@ import { Route, Switch, useRouteMatch } from 'react-router';
 import Game from '../Game/Game';
 import Menu from '../../components/Menu/Menu';
 import Awards from '../Awards/Awards';
+import Award from '../Award/Award';
 import Bookmarks from '../Bookmarks/Bookmarks';
 import Main from '../Main/Main';
 
@@ -16,8 +17,11 @@ const Base: FunctionComponent = () => {
         <Route  exact path={path}>
           <Main />
         </Route>
-        <Route path={`${path}/award`}>
+        <Route path={`${path}/awards`}>
           <Awards />
+        </Route>
+        <Route path={`${path}/award/:id`}>
+          <Award />
         </Route>
         <Route path={`${path}/bookmark`}>
           <Bookmarks />

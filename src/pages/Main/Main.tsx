@@ -27,7 +27,7 @@ const Main: FunctionComponent = () => {
                   key={item.id}
                   name={item.title}
                   icon={item.logo}
-                  link={item.id.toString()}
+                  link={'/playzone/' + item.id.toString()}
                 ></GameCard>
               ))
             ) : (
@@ -45,7 +45,7 @@ const Main: FunctionComponent = () => {
                   key={item.id}
                   name={item.title}
                   icon={item.logo}
-                  link={item.id.toString()}
+                  link={'/playzone/' + item.id.toString()}
                 ></GameCard>
               ))
             ) : (

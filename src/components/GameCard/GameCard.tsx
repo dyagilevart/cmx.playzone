@@ -8,8 +8,6 @@ export interface IGameProps {
 }
 
 const GameCard = ({ name, icon, link }: IGameProps) => {
-  const open = () => {};
-
   let card = (
     <div className="game-card">
       <div className="logo">
@@ -20,7 +18,7 @@ const GameCard = ({ name, icon, link }: IGameProps) => {
   );
 
   return (
-    <>{link ? <Link to={`/playzone/` + link}>{card}</Link> : <>{card}</>}</>
+    <>{link ? <Link to={link}>{card}</Link> : <>{card}</>}</>
   );
 };
 
