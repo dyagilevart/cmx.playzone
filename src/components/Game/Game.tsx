@@ -12,7 +12,7 @@ const Game = ({ name, icon, link }: IGameProps) => {
   return (
     <div className="game" onClick={open}>
       <div className="logo">
-        <img src={`data:image/png;base64, ${icon}`} alt={name} />
+        <img src={icon} alt={name} />
       </div>
       <div className="name">{name}</div>
     </div>
