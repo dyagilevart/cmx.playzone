@@ -1,8 +1,9 @@
-.main {
+.game {
   height: 100%;
 
   .header {
     padding: 20px;
+    min-height: 68px;
 
     .title,
     .description {
@@ -38,35 +39,46 @@
     box-shadow: 0px -7px 9px rgba(0, 0, 0, 0.25);
     border-radius: 15px 15px 0px 0px;
 
-    padding-bottom: 80px;
-  }
-
-  .row {
-    width: 100%;
+    .game-logo {
+      padding-right: 10px;
+    }
 
     .title {
       font-family: Roboto;
       font-style: normal;
-      font-weight: bold;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 28px;
+
+      color: #4f4f4f;
+    }
+
+    .players {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
       font-size: 18px;
       line-height: 21px;
       color: #4f4f4f;
-
-      padding-bottom: 10px;
     }
 
-    .games-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-
-      .game {
-        padding-bottom: 15px;
+    .rules {
+      padding-top: 20px;
+      > .title {
+        padding-bottom: 5px;
       }
     }
+    .footer {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .horizontal {
+    display: flex;
+    flex-direction: row;
   }
 
-  .row + .row {
-    padding-top: 15px;
+  .row {
+    width: 100%;
   }
 }

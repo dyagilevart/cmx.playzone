@@ -3,7 +3,7 @@ import './Main.scss';
 import useLoadPopularGames from '../../core/hooks/useLoadPopularGames';
 import useLoadGames from '../../core/hooks/useLoadGames';
 
-import Game from '../../components/Game/Game';
+import GameCard from '../../components/GameCard/GameCard';
 
 const Main: FunctionComponent = () => {
   const popularGames = useLoadPopularGames();
@@ -23,12 +23,12 @@ const Main: FunctionComponent = () => {
           <div className="games-list">
             {popularGames.length ? (
               popularGames.map((item) => (
-                <Game
+                <GameCard
                   key={item.id}
                   name={item.title}
                   icon={item.logo}
                   link={item.id.toString()}
-                ></Game>
+                ></GameCard>
               ))
             ) : (
               <div>нет данных</div>
@@ -41,12 +41,12 @@ const Main: FunctionComponent = () => {
           <div className="games-list">
             {allGames.length ? (
               allGames.map((item, index) => (
-                <Game
+                <GameCard
                   key={item.id}
                   name={item.title}
                   icon={item.logo}
                   link={item.id.toString()}
-                ></Game>
+                ></GameCard>
               ))
             ) : (
               <div>нет данных</div>

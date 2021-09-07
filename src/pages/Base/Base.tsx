@@ -1,5 +1,6 @@
 import { FunctionComponent } from 'react';
 import { Route, Switch, useRouteMatch } from 'react-router';
+import Game from '../Game/Game';
 import Menu from '../../components/Menu/Menu';
 import Awards from '../Awards/Awards';
 import Bookmarks from '../Bookmarks/Bookmarks';
@@ -21,6 +22,7 @@ const Base: FunctionComponent = () => {
         <Route path={`${path}/bookmark`}>
           <Bookmarks />
         </Route>
+        <Route path={`${path}/:id`} children={<Game />} />
       </Switch>
       <Menu />
     </>

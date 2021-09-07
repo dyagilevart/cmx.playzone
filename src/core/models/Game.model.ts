@@ -3,4 +3,5 @@ export interface IGameModel {
     title: string;
     description: string;
     logo: string;
+    rules: string;
 }

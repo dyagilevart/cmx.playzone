@@ -11,7 +11,7 @@ body {
   font-family: 'Roboto';
   background: linear-gradient(180deg, #c65fea 0%, #8c64ea 56.71%, #5f67ea 100%);
 
-  #root{
+  #root {
     height: 100%;
   }
 }
@@ -41,11 +41,11 @@ body {
   flex-grow: 0;
   margin: 20px 0px;
 
-  .primary {
+  &.primary {
     background: #f76e98;
   }
 
-  .secondary {
+  &.secondary {
     background: #9a6ef7;
   }
 }

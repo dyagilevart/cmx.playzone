@@ -15,7 +15,7 @@ export default abstract class AbstractCrud<T> {
     this.instance = axiosInstance;
   }
 
-  public async get(id?: string, params?: Record<string, unknown>, isAdmin?: boolean): Promise<T> {
+  public async get(id?: string, params?: Record<string, unknown>): Promise<T> {
     let url = this.url;
     if (id) {
       url += `/${id}`;
@@ -30,7 +30,7 @@ export default abstract class AbstractCrud<T> {
     });
   }
 
-  public async delete(id: string, isAdmin?: boolean): Promise<T> {
+  public async delete(id: string): Promise<T> {
     const url = this.url;
 
     return this.instance.delete(url).then(response => {
@@ -38,7 +38,7 @@ export default abstract class AbstractCrud<T> {
     });
   }
 
-  public async getAll(params?: T | Record<string, unknown>, isAdmin?: boolean): Promise<Array<T>> {
+  public async getAll(params?: T | Record<string, unknown>): Promise<Array<T>> {
     let url = this.url;
 
     if (params) {
@@ -50,7 +50,7 @@ export default abstract class AbstractCrud<T> {
     });
   }
 
-  public async put(obj?: T, isAdmin?: boolean): Promise<T> {
+  public async put(obj?: T): Promise<T> {
     const url = this.url;
 
     return this.instance.put(url, obj).then(response => {
@@ -58,7 +58,7 @@ export default abstract class AbstractCrud<T> {
     });
   }
 
-  public async post(obj?: T | Record<string, unknown>, isAdmin?: boolean): Promise<T> {
+  public async post(obj?: T | Record<string, unknown>): Promise<T> {
     const url = this.url;
 
     return this.instance.post(url, obj).then(response => {
