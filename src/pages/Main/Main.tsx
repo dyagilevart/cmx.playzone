@@ -37,12 +37,10 @@ const Main: FunctionComponent = () => {
         </div>
 
         <div className="row">
-          <div className="title">
-            <span>Все</span> <span className="action">посмотреть все</span>
-          </div>
+          <div className="title">Все</div>
           <div className="games-list">
             {allGames.length ? (
-              allGames.map((item) => (
+              allGames.map((item, index) => (
                 <Game
                   key={item.id}
                   name={item.title}
